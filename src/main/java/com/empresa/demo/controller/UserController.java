@@ -1,6 +1,6 @@
 package com.empresa.demo.controller;
 
-import com.empresa.demo.model.User;
+import com.empresa.demo.domain.model.User;
 import com.empresa.demo.service.UserService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/users")
 public class UserController {
+
     private final UserService userService;
 
     public UserController(UserService userService) {
@@ -22,4 +23,6 @@ public class UserController {
         User user = userService.findById(id);
         return ResponseEntity.ok(user);
     }
+
+    /*There was a task that said this controller had syntax issues, but I didn't find any*/
 }

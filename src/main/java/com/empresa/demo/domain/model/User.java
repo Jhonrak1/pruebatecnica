@@ -1,6 +1,8 @@
-package com.empresa.demo.model;
+package com.empresa.demo.domain.model;
 
+//I could use libraries like lombok to reduce boilerplate code.
 public class User {
+
     private Long id;
     private String name;
     private String email;
@@ -38,4 +40,4 @@ public class User {
     }
 
     }
-}
+//Removed unnecessary brace here

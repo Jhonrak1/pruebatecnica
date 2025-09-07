@@ -1,8 +1,9 @@
-package com.empresa.demo.model;
+package com.empresa.demo.domain.model;
 
 import java.math.BigDecimal;
 
 public class Order {
+
     private BigDecimal total;
     private boolean vip;
 
